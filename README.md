@@ -1,11 +1,9 @@
 # Quanti_II
 As requested, the code and data that support the findings of our Quantitative Methods II research paper are available in this folder.
 
+<p><strong>Datasets</strong>:</p>
+
 <table>
-  <tr>
-    <td><strong>Datasets</strong>:</td>
-    <td>The final data file containing constituency-level state election results and the number of hate crimes that occurred in each constituency in each year</td>
-  </tr>
   <tr>
     <td>data_state:</td>
     <td>The final data file containing constituency-level state election results and the number of hate crimes that occurred in each constituency in each year</td>
@@ -31,6 +29,7 @@ As requested, the code and data that support the findings of our Quantitative Me
     <td>Federal election results</td>
   </tr>
 </table>
+
 
 
 Code:
