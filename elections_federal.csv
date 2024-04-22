@@ -1,0 +1,738 @@
+"year","date","constituency","constituency_no","state","afd","afd_margin"
+2013,2013-09-22,"Flensburg – Schleswig",1,"Schleswig-Holstein",3.3,-39.2
+2013,2013-09-22,"Nordfriesland – Dithmarschen Nord",2,"Schleswig-Holstein",3.1,-46.7
+2013,2013-09-22,"Steinburg – Dithmarschen Süd",3,"Schleswig-Holstein",3.6,-41.8
+2013,2013-09-22,"Rendsburg-Eckernförde",4,"Schleswig-Holstein",3.4,-41.8
+2013,2013-09-22,"Kiel",5,"Schleswig-Holstein",2.8,-40.2
+2013,2013-09-22,"Plön – Neumünster",6,"Schleswig-Holstein",3.9,-39.8
+2013,2013-09-22,"Pinneberg",7,"Schleswig-Holstein",3.8,-41.6
+2013,2013-09-22,"Segeberg – Stormarn-Mitte",8,"Schleswig-Holstein",3.8,-41.6
+2013,2013-09-22,"Ostholstein – Stormarn-Nord",9,"Schleswig-Holstein",3.8,-42.1
+2013,2013-09-22,"Herzogtum Lauenburg – Stormarn-Süd",10,"Schleswig-Holstein",4.6,-40.6
+2013,2013-09-22,"Lübeck",11,"Schleswig-Holstein",3.4,-37.3
+2013,2013-09-22,"Hamburg-Mitte",18,"Hamburg",3.3,-35.9
+2013,2013-09-22,"Hamburg-Altona",19,"Hamburg",2.3,-32.6
+2013,2013-09-22,"Hamburg-Eimsbüttel",20,"Hamburg",2.9,-34.6
+2013,2013-09-22,"Hamburg-Nord",21,"Hamburg",3.5,-36.2
+2013,2013-09-22,"Hamburg-Wandsbek",22,"Hamburg",4.2,-35.8
+2013,2013-09-22,"Hamburg-Bergedorf – Harburg",23,"Hamburg",3.9,-36.5
+2013,2013-09-22,"Oldenburg – Ammerland",27,"Niedersachsen",3.4,-34
+2013,2013-09-22,"Delmenhorst – Wesermarsch – Oldenburg-Land",28,"Niedersachsen",3.3,-36.4
+2013,2013-09-22,"Cuxhaven – Stade II",29,"Niedersachsen",3,-43.8
+2013,2013-09-22,"Stade I – Rotenburg II",30,"Niedersachsen",3.9,-43.7
+2013,2013-09-22,"Mittelems",31,"Niedersachsen",2.2,-56.8
+2013,2013-09-22,"Cloppenburg – Vechta",32,"Niedersachsen",2.1,-64.2
+2013,2013-09-22,"Diepholz – Nienburg I",33,"Niedersachsen",2.5,-45
+2013,2013-09-22,"Osterholz – Verden",34,"Niedersachsen",3.1,-40.9
+2013,2013-09-22,"Harburg",36,"Niedersachsen",5.7,-39.5
+2013,2013-09-22,"Lüchow-Dannenberg – Lüneburg",37,"Niedersachsen",3.7,-36.1
+2013,2013-09-22,"Stadt Hannover I",41,"Niedersachsen",3.2,-40.3
+2013,2013-09-22,"Stadt Hannover II",42,"Niedersachsen",2.7,-40.1
+2013,2013-09-22,"Hannover-Land I",43,"Niedersachsen",3.1,-41.2
+2013,2013-09-22,"Celle – Uelzen",44,"Niedersachsen",4.2,-44.3
+2013,2013-09-22,"Hameln-Pyrmont – Holzminden",46,"Niedersachsen",3.7,-38.6
+2013,2013-09-22,"Salzgitter – Wolfenbüttel",49,"Niedersachsen",3,-43.6
+2013,2013-09-22,"Braunschweig",50,"Niedersachsen",2.7,-40.9
+2013,2013-09-22,"Bremen I",54,"Bremen",2.9,-35
+2013,2013-09-22,"Bremen II – Bremerhaven",55,"Bremen",3.7,-40.2
+2013,2013-09-22,"Dessau – Wittenberg",70,"Thüringen",4.7,-39.9
+2013,2013-09-22,"Anhalt",71,"Thüringen",4.6,-36.4
+2013,2013-09-22,"Halle",72,"Thüringen",3.4,-32.9
+2013,2013-09-22,"Berlin-Mitte",75,"Berlin",3,-25.3
+2013,2013-09-22,"Berlin-Pankow",76,"Berlin",4.1,-24.2
+2013,2013-09-22,"Berlin-Reinickendorf",77,"Berlin",4.5,-40.5
+2013,2013-09-22,"Berlin-Spandau – Charlottenburg Nord",78,"Berlin",4.3,-34.9
+2013,2013-09-22,"Berlin-Steglitz – Zehlendorf",79,"Berlin",4.2,-38.3
+2013,2013-09-22,"Berlin-Charlottenburg – Wilmersdorf",80,"Berlin",3.7,-33.4
+2013,2013-09-22,"Berlin-Tempelhof – Schöneberg",81,"Berlin",3.7,-31.3
+2013,2013-09-22,"Berlin-Neukölln",82,"Berlin",3,-29.3
+2013,2013-09-22,"Berlin-Friedrichshain – Kreuzberg – Prenzlauer Berg Ost",83,"Berlin",2,-37.9
+2013,2013-09-22,"Berlin-Treptow – Köpenick",84,"Berlin",4,-38.2
+2013,2013-09-22,"Berlin-Marzahn – Hellersdorf",85,"Berlin",4.9,-34
+2013,2013-09-22,"Berlin-Lichtenberg",86,"Berlin",4.3,-36
+2013,2013-09-22,"Aachen I",87,"Nordrhein-Westfalen",2.2,-38.5
+2013,2013-09-22,"Heinsberg",89,"Nordrhein-Westfalen",2.3,-51.1
+2013,2013-09-22,"Köln I",93,"Nordrhein-Westfalen",3,-34
+2013,2013-09-22,"Köln II",94,"Nordrhein-Westfalen",2.1,-37.9
+2013,2013-09-22,"Bonn",96,"Nordrhein-Westfalen",2.5,-35.7
+2013,2013-09-22,"Rhein-Sieg-Kreis I",97,"Nordrhein-Westfalen",3.2,-46.4
+2013,2013-09-22,"Rhein-Sieg-Kreis II",98,"Nordrhein-Westfalen",3.1,-49.3
+2013,2013-09-22,"Oberbergischer Kreis",99,"Nordrhein-Westfalen",3,-49.2
+2013,2013-09-22,"Rheinisch-Bergischer Kreis",100,"Nordrhein-Westfalen",2.8,-55.7
+2013,2013-09-22,"Solingen – Remscheid – Wuppertal II",103,"Nordrhein-Westfalen",3.6,-40.7
+2013,2013-09-22,"Mettmann I",104,"Nordrhein-Westfalen",3.1,-46.4
+2013,2013-09-22,"Mettmann II",105,"Nordrhein-Westfalen",3.2,-42.4
+2013,2013-09-22,"Düsseldorf I",106,"Nordrhein-Westfalen",3.1,-44.8
+2013,2013-09-22,"Neuss I",108,"Nordrhein-Westfalen",2.7,-48.9
+2013,2013-09-22,"Mönchengladbach",109,"Nordrhein-Westfalen",3.4,-47.4
+2013,2013-09-22,"Krefeld I – Neuss II",110,"Nordrhein-Westfalen",2.4,-46.7
+2013,2013-09-22,"Viersen",111,"Nordrhein-Westfalen",2.5,-50.5
+2013,2013-09-22,"Kleve",112,"Nordrhein-Westfalen",3.3,-47.6
+2013,2013-09-22,"Wesel I",113,"Nordrhein-Westfalen",3,-40.5
+2013,2013-09-22,"Duisburg II",116,"Nordrhein-Westfalen",4.1,-39.1
+2013,2013-09-22,"Mülheim – Essen I",118,"Nordrhein-Westfalen",3.9,-38.3
+2013,2013-09-22,"Essen III",120,"Nordrhein-Westfalen",2.7,-36.8
+2013,2013-09-22,"Recklinghausen I",121,"Nordrhein-Westfalen",3.3,-41.9
+2013,2013-09-22,"Gelsenkirchen",123,"Nordrhein-Westfalen",3.8,-46.7
+2013,2013-09-22,"Steinfurt I – Borken I",124,"Nordrhein-Westfalen",2.2,-49.8
+2013,2013-09-22,"Bottrop – Recklinghausen III",125,"Nordrhein-Westfalen",3.8,-42
+2013,2013-09-22,"Borken II",126,"Nordrhein-Westfalen",1.9,-55.5
+2013,2013-09-22,"Coesfeld – Steinfurt II",127,"Nordrhein-Westfalen",2,-54.1
+2013,2013-09-22,"Steinfurt III",128,"Nordrhein-Westfalen",1.8,-46.1
+2013,2013-09-22,"Münster",129,"Nordrhein-Westfalen",2,-36.8
+2013,2013-09-22,"Warendorf",130,"Nordrhein-Westfalen",2.2,-49.1
+2013,2013-09-22,"Gütersloh I",131,"Nordrhein-Westfalen",2.5,-47.8
+2013,2013-09-22,"Bielefeld – Gütersloh II",132,"Nordrhein-Westfalen",2.5,-35.6
+2013,2013-09-22,"Lippe I",135,"Nordrhein-Westfalen",2.5,-38.6
+2013,2013-09-22,"Höxter – Lippe II",136,"Nordrhein-Westfalen",2.6,-47.4
+2013,2013-09-22,"Paderborn – Gütersloh III",137,"Nordrhein-Westfalen",2,-57.1
+2013,2013-09-22,"Ennepe-Ruhr-Kreis II",139,"Nordrhein-Westfalen",3,-39.3
+2013,2013-09-22,"Dortmund I",142,"Nordrhein-Westfalen",3.5,-41.9
+2013,2013-09-22,"Siegen-Wittgenstein",148,"Nordrhein-Westfalen",3.1,-42.7
+2013,2013-09-22,"Olpe – Märkischer Kreis I",149,"Nordrhein-Westfalen",2.6,-49.1
+2013,2013-09-22,"Märkischer Kreis II",150,"Nordrhein-Westfalen",3.3,-38.4
+2013,2013-09-22,"Hochtaunus",176,"Hessen",5.7,-43.1
+2013,2013-09-22,"Rheingau-Taunus – Limburg",178,"Hessen",4.3,-47.8
+2013,2013-09-22,"Wiesbaden",179,"Hessen",4,-39.6
+2013,2013-09-22,"Frankfurt am Main II",183,"Hessen",3.3,-33
+2013,2013-09-22,"Darmstadt",186,"Hessen",3.8,-33.5
+2013,2013-09-22,"Bergstraße",188,"Hessen",4.2,-44.1
+2013,2013-09-22,"Gotha – Ilm-Kreis",192,"Sachsen",5.8,-31.5
+2013,2013-09-22,"Gera – Jena – Saale-Holzland-Kreis",194,"Sachsen",5.5,-30.6
+2013,2013-09-22,"Greiz – Altenburger Land",195,"Sachsen",6,-38.9
+2013,2013-09-22,"Worms",207,"Rheinland-Pfalz",4.3,-37.7
+2013,2013-09-22,"Altötting",213,"Bayern",3.3,-11.1
+2013,2013-09-22,"Erding – Ebersberg",214,"Bayern",4.5,-14.6
+2013,2013-09-22,"Freising",215,"Bayern",3.8,-13.8
+2013,2013-09-22,"Fürstenfeldbruck",216,"Bayern",4.6,-15.5
+2013,2013-09-22,"Ingolstadt",217,"Bayern",2.8,-13.7
+2013,2013-09-22,"München-Süd",220,"Bayern",3,-25.4
+2013,2013-09-22,"München-Land",222,"Bayern",4,-16.3
+2013,2013-09-22,"Rosenheim",223,"Bayern",4.1,-8.4
+2013,2013-09-22,"Deggendorf",227,"Bayern",3.3,-12.6
+2013,2013-09-22,"Passau",229,"Bayern",3.1,-16.6
+2013,2013-09-22,"Rottal-Inn",230,"Bayern",3,-13.2
+2013,2013-09-22,"Straubing",231,"Bayern",3.3,-14.3
+2013,2013-09-22,"Regensburg",233,"Bayern",3.7,-18.3
+2013,2013-09-22,"Weiden",235,"Bayern",2.4,-19.6
+2013,2013-09-22,"Bamberg",236,"Bayern",3.4,-19.5
+2013,2013-09-22,"Bayreuth",237,"Bayern",3.1,-22.5
+2013,2013-09-22,"Coburg",238,"Bayern",2.8,-29.6
+2013,2013-09-22,"Hof",239,"Bayern",3.5,-25.1
+2013,2013-09-22,"Kulmbach",240,"Bayern",3.2,-19.6
+2013,2013-09-22,"Erlangen",242,"Bayern",3.3,-23
+2013,2013-09-22,"Fürth",243,"Bayern",3.2,-23.9
+2013,2013-09-22,"Nürnberg-Nord",244,"Bayern",3.4,-28.3
+2013,2013-09-22,"Nürnberg-Süd",245,"Bayern",3.7,-28.6
+2013,2013-09-22,"Main-Spessart",249,"Bayern",3.3,-20
+2013,2013-09-22,"Würzburg",251,"Bayern",2.9,-22.6
+2013,2013-09-22,"Augsburg-Stadt",252,"Bayern",4.8,-20.3
+2013,2013-09-22,"Augsburg-Land",253,"Bayern",4.5,-13.2
+2013,2013-09-22,"Neu-Ulm",255,"Bayern",4.7,-13.7
+2013,2013-09-22,"Ostallgäu",257,"Bayern",4.1,-10.9
+2013,2013-09-22,"Stuttgart I",258,"Baden-Württemberg",2.7,-39.3
+2013,2013-09-22,"Stuttgart II",259,"Baden-Württemberg",3.4,-40.4
+2013,2013-09-22,"Esslingen",261,"Baden-Württemberg",3,-48.3
+2013,2013-09-22,"Nürtingen",262,"Baden-Württemberg",3.2,-47.8
+2013,2013-09-22,"Göppingen",263,"Baden-Württemberg",5.3,-43.7
+2013,2013-09-22,"Waiblingen",264,"Baden-Württemberg",3.8,-47.6
+2013,2013-09-22,"Karlsruhe-Stadt",271,"Baden-Württemberg",4,-35.5
+2013,2013-09-22,"Rastatt",273,"Baden-Württemberg",4.8,-48.7
+2013,2013-09-22,"Heidelberg",274,"Baden-Württemberg",4.9,-36
+2013,2013-09-22,"Odenwald – Tauber",276,"Baden-Württemberg",4.1,-55
+2013,2013-09-22,"Rhein-Neckar",277,"Baden-Württemberg",4.6,-45.1
+2013,2013-09-22,"Bruchsal – Schwetzingen",278,"Baden-Württemberg",4.4,-47.4
+2013,2013-09-22,"Pforzheim",279,"Baden-Württemberg",5.1,-44.4
+2013,2013-09-22,"Freiburg",281,"Baden-Württemberg",2.5,-32.4
+2013,2013-09-22,"Lörrach – Müllheim",282,"Baden-Württemberg",3.6,-46.5
+2013,2013-09-22,"Offenburg",284,"Baden-Württemberg",3.9,-52.2
+2013,2013-09-22,"Rottweil – Tuttlingen",285,"Baden-Württemberg",5,-52.8
+2013,2013-09-22,"Schwarzwald-Baar",286,"Baden-Württemberg",3.9,-52.8
+2013,2013-09-22,"Konstanz",287,"Baden-Württemberg",4,-47.9
+2013,2013-09-22,"Reutlingen",289,"Baden-Württemberg",4.3,-47.6
+2013,2013-09-22,"Tübingen",290,"Baden-Württemberg",3.4,-43.5
+2013,2013-09-22,"Ulm",291,"Baden-Württemberg",3.6,-48.5
+2013,2013-09-22,"Ravensburg",294,"Baden-Württemberg",2.7,-48.9
+2013,2013-09-22,"Saarbrücken",296,"Saarland",4.1,-32.8
+2013,2013-09-22,"Saarlouis",297,"Saarland",4.3,-40.2
+2013,2013-09-22,"St. Wendel",298,"Saarland",4.7,-40.7
+2013,2013-09-22,"Homburg",299,"Saarland",4.6,-35.2
+2017,2017-09-24,"Flensburg – Schleswig",1,"Schleswig-Holstein",6.2,-33.8
+2017,2017-09-24,"Nordfriesland – Dithmarschen Nord",2,"Schleswig-Holstein",5.9,-39.2
+2017,2017-09-24,"Steinburg – Dithmarschen Süd",3,"Schleswig-Holstein",7.6,-34.3
+2017,2017-09-24,"Rendsburg-Eckernförde",4,"Schleswig-Holstein",6.8,-35.9
+2017,2017-09-24,"Kiel",5,"Schleswig-Holstein",6.1,-24.9
+2017,2017-09-24,"Plön – Neumünster",6,"Schleswig-Holstein",7.8,-32.9
+2017,2017-09-24,"Pinneberg",7,"Schleswig-Holstein",7.9,-31.8
+2017,2017-09-24,"Segeberg – Stormarn-Mitte",8,"Schleswig-Holstein",8.2,-32.9
+2017,2017-09-24,"Ostholstein – Stormarn-Nord",9,"Schleswig-Holstein",7.9,-33.6
+2017,2017-09-24,"Herzogtum Lauenburg – Stormarn-Süd",10,"Schleswig-Holstein",9.1,-30.4
+2017,2017-09-24,"Lübeck",11,"Schleswig-Holstein",8.7,-26.6
+2017,2017-09-24,"Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",12,"Brandenburgy",16,-16.1
+2017,2017-09-24,"Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",13,"Brandenburgy",17.4,-12.6
+2017,2017-09-24,"Rostock – Landkreis Rostock II",14,"Brandenburgy",14.7,-14.8
+2017,2017-09-24,"Vorpommern-Rügen – Vorpommern-Greifswald I",15,"Brandenburgy",19.2,-24.8
+2017,2017-09-24,"Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",16,"Brandenburgy",23.5,-7.7
+2017,2017-09-24,"Mecklenburgische Seenplatte II – Landkreis Rostock III",17,"Brandenburgy",18.4,-19.2
+2017,2017-09-24,"Hamburg-Mitte",18,"Hamburg",7.3,-23.6
+2017,2017-09-24,"Hamburg-Altona",19,"Hamburg",5.1,-23.8
+2017,2017-09-24,"Hamburg-Eimsbüttel",20,"Hamburg",5.7,-25.9
+2017,2017-09-24,"Hamburg-Nord",21,"Hamburg",5.5,-28
+2017,2017-09-24,"Hamburg-Wandsbek",22,"Hamburg",9.5,-25.1
+2017,2017-09-24,"Hamburg-Bergedorf – Harburg",23,"Hamburg",10.9,-23.9
+2017,2017-09-24,"Unterems",25,"Niedersachsen",7.7,-42.3
+2017,2017-09-24,"Friesland – Wilhelmshaven – Wittmund",26,"Niedersachsen",8.3,-31.4
+2017,2017-09-24,"Oldenburg – Ammerland",27,"Niedersachsen",6.7,-29.6
+2017,2017-09-24,"Delmenhorst – Wesermarsch – Oldenburg-Land",28,"Niedersachsen",9,-25.1
+2017,2017-09-24,"Cuxhaven – Stade II",29,"Niedersachsen",8.5,-34.2
+2017,2017-09-24,"Stade I – Rotenburg II",30,"Niedersachsen",8.3,-36.1
+2017,2017-09-24,"Mittelems",31,"Niedersachsen",5,-48.6
+2017,2017-09-24,"Cloppenburg – Vechta",32,"Niedersachsen",7.8,-49.9
+2017,2017-09-24,"Diepholz – Nienburg I",33,"Niedersachsen",8.1,-36.5
+2017,2017-09-24,"Osterholz – Verden",34,"Niedersachsen",8.6,-30.6
+2017,2017-09-24,"Rotenburg I – Heidekreis",35,"Niedersachsen",8.2,-33
+2017,2017-09-24,"Harburg",36,"Niedersachsen",9.2,-31.4
+2017,2017-09-24,"Lüchow-Dannenberg – Lüneburg",37,"Niedersachsen",8.7,-24.8
+2017,2017-09-24,"Osnabrück-Land",38,"Niedersachsen",6.6,-39
+2017,2017-09-24,"Nienburg II – Schaumburg",40,"Niedersachsen",9.1,-31.5
+2017,2017-09-24,"Stadt Hannover I",41,"Niedersachsen",8.5,-27.1
+2017,2017-09-24,"Stadt Hannover II",42,"Niedersachsen",7.2,-26.5
+2017,2017-09-24,"Hannover-Land I",43,"Niedersachsen",9.6,-30.5
+2017,2017-09-24,"Celle – Uelzen",44,"Niedersachsen",10.1,-32.6
+2017,2017-09-24,"Gifhorn – Peine",45,"Niedersachsen",9.9,-27.9
+2017,2017-09-24,"Hameln-Pyrmont – Holzminden",46,"Niedersachsen",9.5,-29.6
+2017,2017-09-24,"Hannover-Land II",47,"Niedersachsen",9.4,-27.6
+2017,2017-09-24,"Hildesheim",48,"Niedersachsen",8.6,-28.6
+2017,2017-09-24,"Salzgitter – Wolfenbüttel",49,"Niedersachsen",11.9,-30.9
+2017,2017-09-24,"Braunschweig",50,"Niedersachsen",7.8,-30.2
+2017,2017-09-24,"Helmstedt – Wolfsburg",51,"Niedersachsen",10.2,-27.8
+2017,2017-09-24,"Goslar – Northeim – Osterode",52,"Niedersachsen",9.3,-30.5
+2017,2017-09-24,"Göttingen",53,"Niedersachsen",7,-27.9
+2017,2017-09-24,"Bremen I",54,"Bremen",7.7,-22.3
+2017,2017-09-24,"Bremen II – Bremerhaven",55,"Bremen",11.4,-22.6
+2017,2017-09-24,"Prignitz – Ostprignitz-Ruppin – Havelland I",56,"Mecklenburg-Vorpommer",18,-12.8
+2017,2017-09-24,"Uckermark – Barnim I",57,"Mecklenburg-Vorpommer",20.2,-10.4
+2017,2017-09-24,"Oberhavel – Havelland II",58,"Mecklenburg-Vorpommer",18,-11.9
+2017,2017-09-24,"Märkisch-Oderland – Barnim II",59,"Mecklenburg-Vorpommer",20.2,-8.2
+2017,2017-09-24,"Brandenburg a.d. Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",60,"Mecklenburg-Vorpommer",16.9,-14.9
+2017,2017-09-24,"Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",61,"Mecklenburg-Vorpommer",12.3,-13.8
+2017,2017-09-24,"Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I",62,"Mecklenburg-Vorpommer",20.3,-10.4
+2017,2017-09-24,"Frankfurt (Oder) – Oder-Spree",63,"Mecklenburg-Vorpommer",21.9,-5.2
+2017,2017-09-24,"Cottbus – Spree-Neiße",64,"Mecklenburg-Vorpommer",25.3,-3.1
+2017,2017-09-24,"Elbe-Elster – Oberspreewald-Lausitz II",65,"Mecklenburg-Vorpommer",24.7,-4.8
+2017,2017-09-24,"Altmark",66,"Thüringen",16.5,-16.1
+2017,2017-09-24,"Harz",68,"Thüringen",16.1,-20.3
+2017,2017-09-24,"Magdeburg",69,"Thüringen",15.3,-12.1
+2017,2017-09-24,"Dessau – Wittenberg",70,"Thüringen",19.4,-15.8
+2017,2017-09-24,"Anhalt",71,"Thüringen",22.2,-9.4
+2017,2017-09-24,"Halle",72,"Thüringen",17.3,-9.8
+2017,2017-09-24,"Burgenland – Saalekreis",73,"Thüringen",23.4,-10.2
+2017,2017-09-24,"Mansfeld",74,"Thüringen",23.9,-7.1
+2017,2017-09-24,"Berlin-Mitte",75,"Berlin",7.9,-15.6
+2017,2017-09-24,"Berlin-Pankow",76,"Berlin",12.1,-16.7
+2017,2017-09-24,"Berlin-Reinickendorf",77,"Berlin",13.2,-23.6
+2017,2017-09-24,"Berlin-Spandau – Charlottenburg Nord",78,"Berlin",13.4,-18.7
+2017,2017-09-24,"Berlin-Steglitz – Zehlendorf",79,"Berlin",8.2,-27.2
+2017,2017-09-24,"Berlin-Charlottenburg – Wilmersdorf",80,"Berlin",7.5,-22.7
+2017,2017-09-24,"Berlin-Tempelhof – Schöneberg",81,"Berlin",9.1,-19.8
+2017,2017-09-24,"Berlin-Neukölln",82,"Berlin",10.7,-16.1
+2017,2017-09-24,"Berlin-Friedrichshain – Kreuzberg – Prenzlauer Berg Ost",83,"Berlin",6.2,-20.1
+2017,2017-09-24,"Berlin-Treptow – Köpenick",84,"Berlin",15,-24.9
+2017,2017-09-24,"Berlin-Marzahn – Hellersdorf",85,"Berlin",20.6,-13.6
+2017,2017-09-24,"Berlin-Lichtenberg",86,"Berlin",15.7,-19.1
+2017,2017-09-24,"Aachen I",87,"Nordrhein-Westfalen",5.6,-28.1
+2017,2017-09-24,"Aachen II",88,"Nordrhein-Westfalen",8.8,-28.1
+2017,2017-09-24,"Heinsberg",89,"Nordrhein-Westfalen",8.3,-37.3
+2017,2017-09-24,"Düren",90,"Nordrhein-Westfalen",8.9,-33
+2017,2017-09-24,"Rhein-Erft-Kreis I",91,"Nordrhein-Westfalen",9,-30.2
+2017,2017-09-24,"Euskirchen – Rhein-Erft-Kreis II",92,"Nordrhein-Westfalen",9.5,-33.3
+2017,2017-09-24,"Köln I",93,"Nordrhein-Westfalen",8.6,-23
+2017,2017-09-24,"Köln II",94,"Nordrhein-Westfalen",4.6,-30.3
+2017,2017-09-24,"Köln III",95,"Nordrhein-Westfalen",7.5,-24.8
+2017,2017-09-24,"Bonn",96,"Nordrhein-Westfalen",6.1,-28.8
+2017,2017-09-24,"Rhein-Sieg-Kreis II",98,"Nordrhein-Westfalen",8.4,-38.1
+2017,2017-09-24,"Oberbergischer Kreis",99,"Nordrhein-Westfalen",10.1,-33.6
+2017,2017-09-24,"Rheinisch-Bergischer Kreis",100,"Nordrhein-Westfalen",7.2,-32.8
+2017,2017-09-24,"Leverkusen – Köln IV",101,"Nordrhein-Westfalen",8.7,-30
+2017,2017-09-24,"Wuppertal I",102,"Nordrhein-Westfalen",11,-20.5
+2017,2017-09-24,"Solingen – Remscheid – Wuppertal II",103,"Nordrhein-Westfalen",9.5,-28.7
+2017,2017-09-24,"Mettmann I",104,"Nordrhein-Westfalen",8.9,-35.7
+2017,2017-09-24,"Mettmann II",105,"Nordrhein-Westfalen",9,-30.3
+2017,2017-09-24,"Düsseldorf I",106,"Nordrhein-Westfalen",6.4,-34
+2017,2017-09-24,"Düsseldorf II",107,"Nordrhein-Westfalen",8.1,-25.7
+2017,2017-09-24,"Neuss I",108,"Nordrhein-Westfalen",8.6,-35.4
+2017,2017-09-24,"Mönchengladbach",109,"Nordrhein-Westfalen",9.1,-35.2
+2017,2017-09-24,"Krefeld I – Neuss II",110,"Nordrhein-Westfalen",7.3,-35.1
+2017,2017-09-24,"Viersen",111,"Nordrhein-Westfalen",7,-40.9
+2017,2017-09-24,"Kleve",112,"Nordrhein-Westfalen",6.6,-38.4
+2017,2017-09-24,"Wesel I",113,"Nordrhein-Westfalen",8.6,-30.4
+2017,2017-09-24,"Krefeld II – Wesel II",114,"Nordrhein-Westfalen",8.5,-28.5
+2017,2017-09-24,"Duisburg I",115,"Nordrhein-Westfalen",11.5,-26.8
+2017,2017-09-24,"Duisburg II",116,"Nordrhein-Westfalen",16.6,-18.1
+2017,2017-09-24,"Oberhausen – Wesel III",117,"Nordrhein-Westfalen",12.3,-26.2
+2017,2017-09-24,"Mülheim – Essen I",118,"Nordrhein-Westfalen",11.5,-23.4
+2017,2017-09-24,"Essen II",119,"Nordrhein-Westfalen",15.8,-21.5
+2017,2017-09-24,"Essen III",120,"Nordrhein-Westfalen",8.1,-29
+2017,2017-09-24,"Recklinghausen I",121,"Nordrhein-Westfalen",11.4,-27.3
+2017,2017-09-24,"Gelsenkirchen",123,"Nordrhein-Westfalen",16.9,-21.4
+2017,2017-09-24,"Steinfurt I – Borken I",124,"Nordrhein-Westfalen",6,-45.3
+2017,2017-09-24,"Bottrop – Recklinghausen III",125,"Nordrhein-Westfalen",11.8,-25
+2017,2017-09-24,"Steinfurt III",128,"Nordrhein-Westfalen",6.3,-38.5
+2017,2017-09-24,"Münster",129,"Nordrhein-Westfalen",4.5,-32.7
+2017,2017-09-24,"Warendorf",130,"Nordrhein-Westfalen",6.9,-39.5
+2017,2017-09-24,"Gütersloh I",131,"Nordrhein-Westfalen",8,-38.6
+2017,2017-09-24,"Bielefeld – Gütersloh II",132,"Nordrhein-Westfalen",8.2,-25
+2017,2017-09-24,"Herford – Minden-Lübbecke II",133,"Nordrhein-Westfalen",10,-26.7
+2017,2017-09-24,"Minden-Lübbecke I",134,"Nordrhein-Westfalen",9.9,-27.5
+2017,2017-09-24,"Lippe I",135,"Nordrhein-Westfalen",10.2,-26.4
+2017,2017-09-24,"Höxter – Lippe II",136,"Nordrhein-Westfalen",9.1,-35.2
+2017,2017-09-24,"Paderborn – Gütersloh III",137,"Nordrhein-Westfalen",9.1,-44.2
+2017,2017-09-24,"Hagen – Ennepe-Ruhr-Kreis I",138,"Nordrhein-Westfalen",11.3,-27.9
+2017,2017-09-24,"Bochum I",140,"Nordrhein-Westfalen",9.5,-27.7
+2017,2017-09-24,"Herne – Bochum II",141,"Nordrhein-Westfalen",13.4,-28.5
+2017,2017-09-24,"Dortmund I",142,"Nordrhein-Westfalen",9.5,-29.3
+2017,2017-09-24,"Dortmund II",143,"Nordrhein-Westfalen",10.6,-28.2
+2017,2017-09-24,"Unna I",144,"Nordrhein-Westfalen",9.1,-29.7
+2017,2017-09-24,"Hamm – Unna II",145,"Nordrhein-Westfalen",10.4,-26
+2017,2017-09-24,"Soest",146,"Nordrhein-Westfalen",8.9,-33.8
+2017,2017-09-24,"Hochsauerlandkreis",147,"Nordrhein-Westfalen",7.3,-40.7
+2017,2017-09-24,"Siegen-Wittgenstein",148,"Nordrhein-Westfalen",9.8,-30.3
+2017,2017-09-24,"Olpe – Märkischer Kreis I",149,"Nordrhein-Westfalen",8.8,-39.1
+2017,2017-09-24,"Nordsachsen",151,"Sachsen-Anhalt",26.8,-6
+2017,2017-09-24,"Leipzig I",152,"Sachsen-Anhalt",20.5,-7
+2017,2017-09-24,"Leipzig II",153,"Sachsen-Anhalt",15,-10.3
+2017,2017-09-24,"Leipzig-Land",154,"Sachsen-Anhalt",28.7,-5.4
+2017,2017-09-24,"Meißen",155,"Sachsen-Anhalt",31,-5.7
+2017,2017-09-24,"Bautzen I",156,"Sachsen-Anhalt",33.2,2.6
+2017,2017-09-24,"Görlitz",157,"Sachsen-Anhalt",32.4,1
+2017,2017-09-24,"Sächsische Schweiz – Osterzgebirge",158,"Sachsen-Anhalt",37.4,8.6
+2017,2017-09-24,"Dresden I",159,"Sachsen-Anhalt",22.4,-2.2
+2017,2017-09-24,"Dresden II – Bautzen II",160,"Sachsen-Anhalt",22.3,-3.2
+2017,2017-09-24,"Mittelsachsen",161,"Sachsen-Anhalt",31.5,-0.899999999999999
+2017,2017-09-24,"Chemnitz",162,"Sachsen-Anhalt",24,-2.6
+2017,2017-09-24,"Chemnitzer Umland – Erzgebirgskreis II",163,"Sachsen-Anhalt",26.6,-8.5
+2017,2017-09-24,"Erzgebirgskreis I",164,"Sachsen-Anhalt",30.2,-4.5
+2017,2017-09-24,"Vogtlandkreis",166,"Sachsen-Anhalt",26,-9
+2017,2017-09-24,"Waldeck",167,"Hessen",11,-24.1
+2017,2017-09-24,"Kassel",168,"Hessen",10,-25.6
+2017,2017-09-24,"Werra-Meißner – Hersfeld-Rotenburg",169,"Hessen",12.5,-28.7
+2017,2017-09-24,"Schwalm-Eder",170,"Hessen",12,-25.7
+2017,2017-09-24,"Marburg",171,"Hessen",10.2,-25.5
+2017,2017-09-24,"Lahn-Dill",172,"Hessen",11.7,-26.6
+2017,2017-09-24,"Gießen",173,"Hessen",11.5,-23.6
+2017,2017-09-24,"Fulda",174,"Hessen",17.6,-27.6
+2017,2017-09-24,"Main-Kinzig – Wetterau II – Schotten",175,"Hessen",14.8,-21.6
+2017,2017-09-24,"Hochtaunus",176,"Hessen",10.4,-29.5
+2017,2017-09-24,"Wetterau I",177,"Hessen",10.9,-25.5
+2017,2017-09-24,"Rheingau-Taunus – Limburg",178,"Hessen",10.2,-31.6
+2017,2017-09-24,"Wiesbaden",179,"Hessen",10.4,-23.9
+2017,2017-09-24,"Hanau",180,"Hessen",12.8,-22.5
+2017,2017-09-24,"Main-Taunus",181,"Hessen",9.7,-32.2
+2017,2017-09-24,"Frankfurt am Main I",182,"Hessen",9,-21.5
+2017,2017-09-24,"Frankfurt am Main II",183,"Hessen",7.6,-24.8
+2017,2017-09-24,"Groß-Gerau",184,"Hessen",11.3,-23.8
+2017,2017-09-24,"Offenbach",185,"Hessen",11.2,-25.2
+2017,2017-09-24,"Darmstadt",186,"Hessen",9.1,-21.6
+2017,2017-09-24,"Odenwald",187,"Hessen",11.7,-24.4
+2017,2017-09-24,"Bergstraße",188,"Hessen",12.5,-26.4
+2017,2017-09-24,"Eichsfeld – Nordhausen – Kyffhäuserkreis",189,"Sachsen",21.4,-16.6
+2017,2017-09-24,"Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",190,"Sachsen",21.2,-13.2
+2017,2017-09-24,"Jena – Sömmerda – Weimarer Land I",191,"Sachsen",19.3,-9.9
+2017,2017-09-24,"Gotha – Ilm-Kreis",192,"Sachsen",23.9,-5.1
+2017,2017-09-24,"Erfurt – Weimar – Weimarer Land II",193,"Sachsen",17.5,-9.8
+2017,2017-09-24,"Gera – Greiz – Altenburger Land",194,"Sachsen",27.3,-3.1
+2017,2017-09-24,"Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",195,"Sachsen",26.5,-4.4
+2017,2017-09-24,"Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",196,"Sachsen",22.8,-10.7
+2017,2017-09-24,"Neuwied",197,"Rheinland-Pfalz",9.5,-33.7
+2017,2017-09-24,"Ahrweiler",198,"Rheinland-Pfalz",8.8,-34
+2017,2017-09-24,"Koblenz",199,"Rheinland-Pfalz",8.2,-33.1
+2017,2017-09-24,"Mosel/Rhein-Hunsrück",200,"Rheinland-Pfalz",8.2,-35.9
+2017,2017-09-24,"Kreuznach",201,"Rheinland-Pfalz",10.8,-26.2
+2017,2017-09-24,"Bitburg",202,"Rheinland-Pfalz",7.1,-44.1
+2017,2017-09-24,"Trier",203,"Rheinland-Pfalz",7,-30.9
+2017,2017-09-24,"Mainz",205,"Rheinland-Pfalz",7.3,-28.4
+2017,2017-09-24,"Worms",206,"Rheinland-Pfalz",11.3,-29.8
+2017,2017-09-24,"Ludwigshafen/Frankenthal",207,"Rheinland-Pfalz",14.5,-17.6
+2017,2017-09-24,"Neustadt – Speyer",208,"Rheinland-Pfalz",11.9,-28.1
+2017,2017-09-24,"Kaiserslautern",209,"Rheinland-Pfalz",12.6,-21.3
+2017,2017-09-24,"Pirmasens",210,"Rheinland-Pfalz",12.8,-24
+2017,2017-09-24,"Südpfalz",211,"Rheinland-Pfalz",12.3,-28
+2017,2017-09-24,"Altötting",212,"Bayern",13.1,0.799999999999999
+2017,2017-09-24,"Erding – Ebersberg",213,"Bayern",10.3,-4.6
+2017,2017-09-24,"Freising",214,"Bayern",12.5,-1
+2017,2017-09-24,"Fürstenfeldbruck",215,"Bayern",10.2,-8.5
+2017,2017-09-24,"Ingolstadt",216,"Bayern",13,-0.6
+2017,2017-09-24,"München-Nord",217,"Bayern",7.6,-18.4
+2017,2017-09-24,"München-Ost",218,"Bayern",7.4,-13.9
+2017,2017-09-24,"München-Süd",219,"Bayern",7.6,-15.9
+2017,2017-09-24,"München-West/Mitte",220,"Bayern",6.7,-16.4
+2017,2017-09-24,"München-Land",221,"Bayern",8.4,-7.9
+2017,2017-09-24,"Rosenheim",222,"Bayern",13,1.2
+2017,2017-09-24,"Bad Tölz-Wolfratshausen – Miesbach",223,"Bayern",9.9,-3.7
+2017,2017-09-24,"Starnberg – Landsberg am Lech",224,"Bayern",8.9,-7.8
+2017,2017-09-24,"Traunstein",225,"Bayern",10.2,-5.9
+2017,2017-09-24,"Weilheim",226,"Bayern",10.1,-4.7
+2017,2017-09-24,"Deggendorf",227,"Bayern",17.3,-0.0999999999999979
+2017,2017-09-24,"Landshut",228,"Bayern",12.6,-1
+2017,2017-09-24,"Passau",229,"Bayern",14.1,-4.8
+2017,2017-09-24,"Rottal-Inn",230,"Bayern",15.1,0.699999999999999
+2017,2017-09-24,"Straubing",231,"Bayern",15,-1.8
+2017,2017-09-24,"Amberg",232,"Bayern",11.2,-4
+2017,2017-09-24,"Regensburg",233,"Bayern",11.8,-4.9
+2017,2017-09-24,"Bamberg",236,"Bayern",11.5,-8.9
+2017,2017-09-24,"Bayreuth",237,"Bayern",9.4,-11.8
+2017,2017-09-24,"Coburg",238,"Bayern",10.5,-15.9
+2017,2017-09-24,"Hof",239,"Bayern",11.8,-11.8
+2017,2017-09-24,"Kulmbach",240,"Bayern",11.6,-4.5
+2017,2017-09-24,"Ansbach",241,"Bayern",10.5,-7.9
+2017,2017-09-24,"Erlangen",242,"Bayern",7.9,-13.1
+2017,2017-09-24,"Fürth",243,"Bayern",10.6,-12.3
+2017,2017-09-24,"Nürnberg-Nord",244,"Bayern",9.2,-16.4
+2017,2017-09-24,"Nürnberg-Süd",245,"Bayern",13.2,-13.3
+2017,2017-09-24,"Roth",246,"Bayern",10.3,-10.3
+2017,2017-09-24,"Aschaffenburg",247,"Bayern",10.5,-6.1
+2017,2017-09-24,"Bad Kissingen",248,"Bayern",10.5,-8.6
+2017,2017-09-24,"Main-Spessart",249,"Bayern",9.1,-13.5
+2017,2017-09-24,"Schweinfurt",250,"Bayern",11.1,-6
+2017,2017-09-24,"Würzburg",251,"Bayern",7.7,-11
+2017,2017-09-24,"Augsburg-Stadt",252,"Bayern",13.3,-6
+2017,2017-09-24,"Augsburg-Land",253,"Bayern",12.3,-1.8
+2017,2017-09-24,"Donau-Ries",254,"Bayern",12.8,-5.3
+2017,2017-09-24,"Neu-Ulm",255,"Bayern",13.6,-1
+2017,2017-09-24,"Oberallgäu",256,"Bayern",9.6,-2.6
+2017,2017-09-24,"Ostallgäu",257,"Bayern",12.6,1.2
+2017,2017-09-24,"Stuttgart I",258,"Baden-Württemberg",6.7,-25.3
+2017,2017-09-24,"Stuttgart II",259,"Baden-Württemberg",10.4,-23.1
+2017,2017-09-24,"Böblingen",260,"Baden-Württemberg",11.2,-27.6
+2017,2017-09-24,"Esslingen",261,"Baden-Württemberg",10.7,-29.3
+2017,2017-09-24,"Nürtingen",262,"Baden-Württemberg",11.9,-27.5
+2017,2017-09-24,"Göppingen",263,"Baden-Württemberg",14.5,-23.1
+2017,2017-09-24,"Waiblingen",264,"Baden-Württemberg",12.4,-24.4
+2017,2017-09-24,"Ludwigsburg",265,"Baden-Württemberg",11.6,-26.7
+2017,2017-09-24,"Neckar-Zaber",266,"Baden-Württemberg",12.6,-27.4
+2017,2017-09-24,"Heilbronn",267,"Baden-Württemberg",15.6,-19.7
+2017,2017-09-24,"Schwäbisch Hall – Hohenlohe",268,"Baden-Württemberg",13.5,-27
+2017,2017-09-24,"Backnang – Schwäbisch Gmünd",269,"Baden-Württemberg",13.2,-28
+2017,2017-09-24,"Aalen – Heidenheim",270,"Baden-Württemberg",11,-35.4
+2017,2017-09-24,"Karlsruhe-Stadt",271,"Baden-Württemberg",10,-18.5
+2017,2017-09-24,"Karlsruhe-Land",272,"Baden-Württemberg",11.7,-28.7
+2017,2017-09-24,"Rastatt",273,"Baden-Württemberg",12.2,-31.9
+2017,2017-09-24,"Heidelberg",274,"Baden-Württemberg",8.9,-23.8
+2017,2017-09-24,"Mannheim",275,"Baden-Württemberg",12.5,-16.8
+2017,2017-09-24,"Odenwald – Tauber",276,"Baden-Württemberg",13.6,-33.2
+2017,2017-09-24,"Rhein-Neckar",277,"Baden-Württemberg",13.1,-24.3
+2017,2017-09-24,"Bruchsal – Schwetzingen",278,"Baden-Württemberg",14.4,-27.1
+2017,2017-09-24,"Pforzheim",279,"Baden-Württemberg",15.8,-20.6
+2017,2017-09-24,"Calw",280,"Baden-Württemberg",14.1,-29.2
+2017,2017-09-24,"Freiburg",281,"Baden-Württemberg",7.2,-20.8
+2017,2017-09-24,"Lörrach – Müllheim",282,"Baden-Württemberg",9.6,-29.8
+2017,2017-09-24,"Emmendingen – Lahr",283,"Baden-Württemberg",10.8,-26.8
+2017,2017-09-24,"Offenburg",284,"Baden-Württemberg",10.4,-37.7
+2017,2017-09-24,"Rottweil – Tuttlingen",285,"Baden-Württemberg",13,-30
+2017,2017-09-24,"Schwarzwald-Baar",286,"Baden-Württemberg",11.4,-35.6
+2017,2017-09-24,"Konstanz",287,"Baden-Württemberg",9.6,-35.2
+2017,2017-09-24,"Waldshut",288,"Baden-Württemberg",9.2,-32.7
+2017,2017-09-24,"Reutlingen",289,"Baden-Württemberg",12,-28.8
+2017,2017-09-24,"Tübingen",290,"Baden-Württemberg",8.7,-27
+2017,2017-09-24,"Ulm",291,"Baden-Württemberg",10.7,-32
+2017,2017-09-24,"Biberach",292,"Baden-Württemberg",11.3,-33.2
+2017,2017-09-24,"Bodensee",293,"Baden-Württemberg",10.4,-31
+2017,2017-09-24,"Ravensburg",294,"Baden-Württemberg",9.4,-29.1
+2017,2017-09-24,"Zollernalb – Sigmaringen",295,"Baden-Württemberg",13.6,-31.4
+2017,2017-09-24,"Saarbrücken",296,"Saarland",8.9,-23.2
+2017,2017-09-24,"Saarlouis",297,"Saarland",9,-29
+2017,2017-09-24,"St. Wendel",298,"Saarland",8.4,-33.4
+2017,2017-09-24,"Homburg",299,"Saarland",11,-22.6
+2021,2021-09-26,"Flensburg – Schleswig",1,"Schleswig-Holstein",5.5,-22.6
+2021,2021-09-26,"Nordfriesland – Dithmarschen Nord",2,"Schleswig-Holstein",5.7,-24.7
+2021,2021-09-26,"Steinburg – Dithmarschen Süd",3,"Schleswig-Holstein",7.7,-21.5
+2021,2021-09-26,"Rendsburg-Eckernförde",4,"Schleswig-Holstein",6.3,-24.5
+2021,2021-09-26,"Kiel",5,"Schleswig-Holstein",4.6,-24.9
+2021,2021-09-26,"Plön – Neumünster",6,"Schleswig-Holstein",7.1,-24.3
+2021,2021-09-26,"Pinneberg",7,"Schleswig-Holstein",6.4,-24.8
+2021,2021-09-26,"Segeberg – Stormarn-Mitte",8,"Schleswig-Holstein",7.1,-24.9
+2021,2021-09-26,"Ostholstein – Stormarn-Nord",9,"Schleswig-Holstein",6.8,-26.9
+2021,2021-09-26,"Herzogtum Lauenburg – Stormarn-Süd",10,"Schleswig-Holstein",7.2,-23.8
+2021,2021-09-26,"Lübeck",11,"Schleswig-Holstein",6.6,-27.5
+2021,2021-09-26,"Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I",12,"Brandenburgy",16.5,-12.9
+2021,2021-09-26,"Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I",13,"Brandenburgy",17.2,-18
+2021,2021-09-26,"Rostock – Landkreis Rostock II",14,"Brandenburgy",12.2,-14.8
+2021,2021-09-26,"Vorpommern-Rügen – Vorpommern-Greifswald I",15,"Brandenburgy",19.9,-4.4
+2021,2021-09-26,"Mecklenburgische Seenplatte I – Vorpommern-Greifswald II",16,"Brandenburgy",24.3,-0.5
+2021,2021-09-26,"Mecklenburgische Seenplatte II – Landkreis Rostock III",17,"Brandenburgy",21.6,-9.5
+2021,2021-09-26,"Hamburg-Mitte",18,"Hamburg",4.9,-28.3
+2021,2021-09-26,"Hamburg-Altona",19,"Hamburg",3.4,-26.3
+2021,2021-09-26,"Hamburg-Eimsbüttel",20,"Hamburg",3.4,-26.4
+2021,2021-09-26,"Hamburg-Nord",21,"Hamburg",3.4,-27.3
+2021,2021-09-26,"Hamburg-Wandsbek",22,"Hamburg",6.7,-32
+2021,2021-09-26,"Hamburg-Bergedorf – Harburg",23,"Hamburg",8.2,-31.1
+2021,2021-09-26,"Unterems",25,"Niedersachsen",7.8,-36.6
+2021,2021-09-26,"Friesland – Wilhelmshaven – Wittmund",26,"Niedersachsen",7.7,-37.7
+2021,2021-09-26,"Oldenburg – Ammerland",27,"Niedersachsen",5,-33.2
+2021,2021-09-26,"Delmenhorst – Wesermarsch – Oldenburg-Land",28,"Niedersachsen",7.4,-29.3
+2021,2021-09-26,"Cuxhaven – Stade II",29,"Niedersachsen",7.3,-29.5
+2021,2021-09-26,"Stade I – Rotenburg II",30,"Niedersachsen",7.1,-27.5
+2021,2021-09-26,"Mittelems",31,"Niedersachsen",5,-35.5
+2021,2021-09-26,"Cloppenburg – Vechta",32,"Niedersachsen",7.8,-41.3
+2021,2021-09-26,"Diepholz – Nienburg I",33,"Niedersachsen",6.7,-27.1
+2021,2021-09-26,"Rotenburg I – Heidekreis",35,"Niedersachsen",7.4,-40.2
+2021,2021-09-26,"Harburg",36,"Niedersachsen",6.9,-24.1
+2021,2021-09-26,"Lüchow-Dannenberg – Lüneburg",37,"Niedersachsen",6.3,-21.9
+2021,2021-09-26,"Osnabrück-Land",38,"Niedersachsen",6.3,-29.9
+2021,2021-09-26,"Stadt Osnabrück",39,"Niedersachsen",4.5,-25.8
+2021,2021-09-26,"Nienburg II – Schaumburg",40,"Niedersachsen",8.3,-27
+2021,2021-09-26,"Stadt Hannover I",41,"Niedersachsen",5.9,-29
+2021,2021-09-26,"Stadt Hannover II",42,"Niedersachsen",4.5,-28.4
+2021,2021-09-26,"Hannover-Land I",43,"Niedersachsen",7.5,-26.2
+2021,2021-09-26,"Celle – Uelzen",44,"Niedersachsen",9.3,-23.6
+2021,2021-09-26,"Gifhorn – Peine",45,"Niedersachsen",9.3,-34.4
+2021,2021-09-26,"Hameln-Pyrmont – Holzminden",46,"Niedersachsen",8.5,-34.7
+2021,2021-09-26,"Hannover-Land II",47,"Niedersachsen",7.5,-33.2
+2021,2021-09-26,"Hildesheim",48,"Niedersachsen",7.1,-31.6
+2021,2021-09-26,"Salzgitter – Wolfenbüttel",49,"Niedersachsen",9.9,-28.7
+2021,2021-09-26,"Braunschweig",50,"Niedersachsen",5.8,-30.9
+2021,2021-09-26,"Helmstedt – Wolfsburg",51,"Niedersachsen",9.6,-32.5
+2021,2021-09-26,"Goslar – Northeim – Osterode",52,"Niedersachsen",7.9,-28.8
+2021,2021-09-26,"Bremen I",54,"Bremen",4.9,-25.3
+2021,2021-09-26,"Bremen II – Bremerhaven",55,"Bremen",8.8,-28.1
+2021,2021-09-26,"Prignitz – Ostprignitz-Ruppin – Havelland I",56,"Mecklenburg-Vorpommer",19.7,-13.3
+2021,2021-09-26,"Uckermark – Barnim I",57,"Mecklenburg-Vorpommer",20.3,-9.3
+2021,2021-09-26,"Oberhavel – Havelland II",58,"Mecklenburg-Vorpommer",16,-10.3
+2021,2021-09-26,"Märkisch-Oderland – Barnim II",59,"Mecklenburg-Vorpommer",18.3,-6.5
+2021,2021-09-26,"Brandenburg a.d. Havel – Potsdam-Mittelmark I – Havelland III – Teltow-Fläming I",60,"Mecklenburg-Vorpommer",16.5,-15.6
+2021,2021-09-26,"Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II",61,"Mecklenburg-Vorpommer",9.2,-24.8
+2021,2021-09-26,"Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I",62,"Mecklenburg-Vorpommer",17.6,-8.9
+2021,2021-09-26,"Frankfurt (Oder) – Oder-Spree",63,"Mecklenburg-Vorpommer",21.5,-6.5
+2021,2021-09-26,"Cottbus – Spree-Neiße",64,"Mecklenburg-Vorpommer",25.7,-1.9
+2021,2021-09-26,"Elbe-Elster – Oberspreewald-Lausitz II",65,"Mecklenburg-Vorpommer",25,-0.399999999999999
+2021,2021-09-26,"Altmark",66,"Thüringen",19.4,-8.1
+2021,2021-09-26,"Börde – Jerichower Land",67,"Thüringen",20.3,-5.9
+2021,2021-09-26,"Harz",68,"Thüringen",18.2,-9.5
+2021,2021-09-26,"Magdeburg",69,"Thüringen",15.1,-10.2
+2021,2021-09-26,"Dessau – Wittenberg",70,"Thüringen",19.3,-15
+2021,2021-09-26,"Anhalt",71,"Thüringen",24.2,0.699999999999999
+2021,2021-09-26,"Halle",72,"Thüringen",15.3,-13.5
+2021,2021-09-26,"Burgenland – Saalekreis",73,"Thüringen",26,-0.300000000000001
+2021,2021-09-26,"Mansfeld",74,"Thüringen",25.1,0.200000000000003
+2021,2021-09-26,"Berlin-Mitte",75,"Berlin",5.1,-25.4
+2021,2021-09-26,"Berlin-Pankow",76,"Berlin",8.9,-16.6
+2021,2021-09-26,"Berlin-Reinickendorf",77,"Berlin",9.8,-17.4
+2021,2021-09-26,"Berlin-Spandau – Charlottenburg Nord",78,"Berlin",10.1,-22.7
+2021,2021-09-26,"Berlin-Steglitz – Zehlendorf",79,"Berlin",5.3,-22.7
+2021,2021-09-26,"Berlin-Charlottenburg – Wilmersdorf",80,"Berlin",4.3,-23.6
+2021,2021-09-26,"Berlin-Tempelhof – Schöneberg",81,"Berlin",5.7,-21.4
+2021,2021-09-26,"Berlin-Neukölln",82,"Berlin",7.4,-18.6
+2021,2021-09-26,"Berlin-Friedrichshain – Kreuzberg – Prenzlauer Berg Ost",83,"Berlin",3.9,-34
+2021,2021-09-26,"Berlin-Treptow – Köpenick",84,"Berlin",11.4,-24
+2021,2021-09-26,"Berlin-Marzahn – Hellersdorf",85,"Berlin",15.6,-13.8
+2021,2021-09-26,"Berlin-Lichtenberg",86,"Berlin",12.2,-13.6
+2021,2021-09-26,"Aachen I",87,"Nordrhein-Westfalen",3.8,-26.4
+2021,2021-09-26,"Aachen II",88,"Nordrhein-Westfalen",7.5,-27
+2021,2021-09-26,"Heinsberg",89,"Nordrhein-Westfalen",7.6,-32.1
+2021,2021-09-26,"Düren",90,"Nordrhein-Westfalen",8.5,-28.2
+2021,2021-09-26,"Rhein-Erft-Kreis I",91,"Nordrhein-Westfalen",7,-26
+2021,2021-09-26,"Euskirchen – Rhein-Erft-Kreis II",92,"Nordrhein-Westfalen",7.9,-26.7
+2021,2021-09-26,"Köln I",93,"Nordrhein-Westfalen",6.3,-21.6
+2021,2021-09-26,"Köln II",94,"Nordrhein-Westfalen",2.7,-31.9
+2021,2021-09-26,"Köln III",95,"Nordrhein-Westfalen",5.2,-24.7
+2021,2021-09-26,"Bonn",96,"Nordrhein-Westfalen",4,-21.2
+2021,2021-09-26,"Rhein-Sieg-Kreis I",97,"Nordrhein-Westfalen",7,-25.6
+2021,2021-09-26,"Rhein-Sieg-Kreis II",98,"Nordrhein-Westfalen",5.9,-34.1
+2021,2021-09-26,"Oberbergischer Kreis",99,"Nordrhein-Westfalen",9.5,-24.4
+2021,2021-09-26,"Rheinisch-Bergischer Kreis",100,"Nordrhein-Westfalen",5.4,-24.6
+2021,2021-09-26,"Leverkusen – Köln IV",101,"Nordrhein-Westfalen",7.1,-38.5
+2021,2021-09-26,"Wuppertal I",102,"Nordrhein-Westfalen",8.3,-29
+2021,2021-09-26,"Solingen – Remscheid – Wuppertal II",103,"Nordrhein-Westfalen",7.6,-25
+2021,2021-09-26,"Mettmann I",104,"Nordrhein-Westfalen",6.8,-23.2
+2021,2021-09-26,"Mettmann II",105,"Nordrhein-Westfalen",7.3,-24
+2021,2021-09-26,"Düsseldorf I",106,"Nordrhein-Westfalen",4,-27.1
+2021,2021-09-26,"Düsseldorf II",107,"Nordrhein-Westfalen",5.8,-23.4
+2021,2021-09-26,"Neuss I",108,"Nordrhein-Westfalen",6.7,-29.1
+2021,2021-09-26,"Mönchengladbach",109,"Nordrhein-Westfalen",7.7,-27.9
+2021,2021-09-26,"Krefeld I – Neuss II",110,"Nordrhein-Westfalen",5.9,-27.5
+2021,2021-09-26,"Viersen",111,"Nordrhein-Westfalen",5.9,-29.9
+2021,2021-09-26,"Kleve",112,"Nordrhein-Westfalen",5.8,-31.8
+2021,2021-09-26,"Wesel I",113,"Nordrhein-Westfalen",6.8,-27.4
+2021,2021-09-26,"Krefeld II – Wesel II",114,"Nordrhein-Westfalen",7,-28.2
+2021,2021-09-26,"Duisburg I",115,"Nordrhein-Westfalen",9.5,-30.8
+2021,2021-09-26,"Duisburg II",116,"Nordrhein-Westfalen",13.8,-25.6
+2021,2021-09-26,"Oberhausen – Wesel III",117,"Nordrhein-Westfalen",9.5,-29.3
+2021,2021-09-26,"Mülheim – Essen I",118,"Nordrhein-Westfalen",8.5,-27.8
+2021,2021-09-26,"Essen II",119,"Nordrhein-Westfalen",11.5,-26.3
+2021,2021-09-26,"Essen III",120,"Nordrhein-Westfalen",5.4,-25.3
+2021,2021-09-26,"Recklinghausen I",121,"Nordrhein-Westfalen",9.2,-31.8
+2021,2021-09-26,"Recklinghausen II",122,"Nordrhein-Westfalen",9.6,-27.8
+2021,2021-09-26,"Gelsenkirchen",123,"Nordrhein-Westfalen",14,-26.5
+2021,2021-09-26,"Steinfurt I – Borken I",124,"Nordrhein-Westfalen",5.4,-34.6
+2021,2021-09-26,"Bottrop – Recklinghausen III",125,"Nordrhein-Westfalen",9.6,-29.5
+2021,2021-09-26,"Borken II",126,"Nordrhein-Westfalen",4.9,-38.8
+2021,2021-09-26,"Coesfeld – Steinfurt II",127,"Nordrhein-Westfalen",4.5,-36.4
+2021,2021-09-26,"Steinfurt III",128,"Nordrhein-Westfalen",5.7,-28.3
+2021,2021-09-26,"Münster",129,"Nordrhein-Westfalen",2.7,-29.6
+2021,2021-09-26,"Warendorf",130,"Nordrhein-Westfalen",6.2,-30.1
+2021,2021-09-26,"Gütersloh I",131,"Nordrhein-Westfalen",7.2,-32.8
+2021,2021-09-26,"Bielefeld – Gütersloh II",132,"Nordrhein-Westfalen",6.7,-23.3
+2021,2021-09-26,"Herford – Minden-Lübbecke II",133,"Nordrhein-Westfalen",9.4,-27.1
+2021,2021-09-26,"Minden-Lübbecke I",134,"Nordrhein-Westfalen",8.9,-29.5
+2021,2021-09-26,"Lippe I",135,"Nordrhein-Westfalen",9.5,-21.2
+2021,2021-09-26,"Höxter – Gütersloh III – Lippe II",136,"Nordrhein-Westfalen",8.5,-31.6
+2021,2021-09-26,"Paderborn",137,"Nordrhein-Westfalen",7.4,-40.5
+2021,2021-09-26,"Hagen – Ennepe-Ruhr-Kreis I",138,"Nordrhein-Westfalen",10.1,-23.2
+2021,2021-09-26,"Ennepe-Ruhr-Kreis II",139,"Nordrhein-Westfalen",7.2,-28.2
+2021,2021-09-26,"Herne – Bochum II",141,"Nordrhein-Westfalen",9.8,-33.6
+2021,2021-09-26,"Dortmund I",142,"Nordrhein-Westfalen",6.8,-26.2
+2021,2021-09-26,"Dortmund II",143,"Nordrhein-Westfalen",8.3,-30.8
+2021,2021-09-26,"Unna I",144,"Nordrhein-Westfalen",8,-32.8
+2021,2021-09-26,"Hamm – Unna II",145,"Nordrhein-Westfalen",9.3,-31.3
+2021,2021-09-26,"Soest",146,"Nordrhein-Westfalen",7.9,-25.2
+2021,2021-09-26,"Hochsauerlandkreis",147,"Nordrhein-Westfalen",6.5,-33.9
+2021,2021-09-26,"Siegen-Wittgenstein",148,"Nordrhein-Westfalen",9,-24.6
+2021,2021-09-26,"Olpe – Märkischer Kreis I",149,"Nordrhein-Westfalen",8.5,-28.6
+2021,2021-09-26,"Märkischer Kreis II",150,"Nordrhein-Westfalen",9.1,-24.5
+2021,2021-09-26,"Nordsachsen",151,"Sachsen-Anhalt",27.8,5
+2021,2021-09-26,"Leipzig I",152,"Sachsen-Anhalt",15.9,-4.6
+2021,2021-09-26,"Leipzig II",153,"Sachsen-Anhalt",11.5,-11.3
+2021,2021-09-26,"Leipzig-Land",154,"Sachsen-Anhalt",24.6,0.200000000000003
+2021,2021-09-26,"Meißen",155,"Sachsen-Anhalt",31,8.7
+2021,2021-09-26,"Bautzen I",156,"Sachsen-Anhalt",33.4,7.4
+2021,2021-09-26,"Görlitz",157,"Sachsen-Anhalt",35.8,9.7
+2021,2021-09-26,"Sächsische Schweiz – Osterzgebirge",158,"Sachsen-Anhalt",33,13.8
+2021,2021-09-26,"Dresden I",159,"Sachsen-Anhalt",18.8,-2.3
+2021,2021-09-26,"Dresden II – Bautzen II",160,"Sachsen-Anhalt",18.6,0
+2021,2021-09-26,"Mittelsachsen",161,"Sachsen-Anhalt",33.4,9.6
+2021,2021-09-26,"Chemnitz",162,"Sachsen-Anhalt",21.9,-3.2
+2021,2021-09-26,"Chemnitzer Umland – Erzgebirgskreis II",163,"Sachsen-Anhalt",28.9,5.2
+2021,2021-09-26,"Erzgebirgskreis I",164,"Sachsen-Anhalt",31.7,6.3
+2021,2021-09-26,"Zwickau",165,"Sachsen-Anhalt",25.6,4.4
+2021,2021-09-26,"Vogtlandkreis",166,"Sachsen-Anhalt",26.8,-0.899999999999999
+2021,2021-09-26,"Waldeck",167,"Hessen",9.2,-28.8
+2021,2021-09-26,"Kassel",168,"Hessen",7.1,-29
+2021,2021-09-26,"Werra-Meißner – Hersfeld-Rotenburg",169,"Hessen",11,-32.7
+2021,2021-09-26,"Schwalm-Eder",170,"Hessen",10.3,-29
+2021,2021-09-26,"Marburg",171,"Hessen",9,-27.9
+2021,2021-09-26,"Lahn-Dill",172,"Hessen",10.5,-22.6
+2021,2021-09-26,"Gießen",173,"Hessen",9.1,-21.3
+2021,2021-09-26,"Fulda",174,"Hessen",15.2,-22.9
+2021,2021-09-26,"Main-Kinzig – Wetterau II – Schotten",175,"Hessen",13,-17.5
+2021,2021-09-26,"Hochtaunus",176,"Hessen",7.5,-23.8
+2021,2021-09-26,"Wetterau I",177,"Hessen",8.3,-21.4
+2021,2021-09-26,"Rheingau-Taunus – Limburg",178,"Hessen",8,-22.2
+2021,2021-09-26,"Wiesbaden",179,"Hessen",6.8,-19.5
+2021,2021-09-26,"Hanau",180,"Hessen",10.3,-20.8
+2021,2021-09-26,"Main-Taunus",181,"Hessen",6.8,-26.5
+2021,2021-09-26,"Frankfurt am Main I",182,"Hessen",5.5,-23.5
+2021,2021-09-26,"Frankfurt am Main II",183,"Hessen",4.6,-24.4
+2021,2021-09-26,"Groß-Gerau",184,"Hessen",8.5,-25
+2021,2021-09-26,"Offenbach",185,"Hessen",7.6,-20.2
+2021,2021-09-26,"Darmstadt",186,"Hessen",6,-21.4
+2021,2021-09-26,"Odenwald",187,"Hessen",8.5,-23.8
+2021,2021-09-26,"Bergstraße",188,"Hessen",9.5,-21
+2021,2021-09-26,"Eichsfeld – Nordhausen – Kyffhäuserkreis",189,"Sachsen",22.7,-3.9
+2021,2021-09-26,"Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis",190,"Sachsen",24.8,1
+2021,2021-09-26,"Jena – Sömmerda – Weimarer Land I",191,"Sachsen",19.4,-0.700000000000003
+2021,2021-09-26,"Gotha – Ilm-Kreis",192,"Sachsen",26.5,3
+2021,2021-09-26,"Erfurt – Weimar – Weimarer Land II",193,"Sachsen",16.5,-7.9
+2021,2021-09-26,"Gera – Greiz – Altenburger Land",194,"Sachsen",29,6.8
+2021,2021-09-26,"Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis",195,"Sachsen",29.3,8.3
+2021,2021-09-26,"Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg",196,"Sachsen",21.2,-12.4
+2021,2021-09-26,"Neuwied",197,"Rheinland-Pfalz",9.4,-22.5
+2021,2021-09-26,"Ahrweiler",198,"Rheinland-Pfalz",7.4,-26.9
+2021,2021-09-26,"Koblenz",199,"Rheinland-Pfalz",6.7,-25
+2021,2021-09-26,"Mosel/Rhein-Hunsrück",200,"Rheinland-Pfalz",8,-26.3
+2021,2021-09-26,"Kreuznach",201,"Rheinland-Pfalz",9.5,-23.5
+2021,2021-09-26,"Bitburg",202,"Rheinland-Pfalz",6.5,-31.3
+2021,2021-09-26,"Trier",203,"Rheinland-Pfalz",5.7,-27.3
+2021,2021-09-26,"Montabaur",204,"Rheinland-Pfalz",8.7,-22.8
+2021,2021-09-26,"Mainz",205,"Rheinland-Pfalz",5.2,-19.7
+2021,2021-09-26,"Worms",206,"Rheinland-Pfalz",9.8,-22.4
+2021,2021-09-26,"Ludwigshafen/Frankenthal",207,"Rheinland-Pfalz",11.6,-21.2
+2021,2021-09-26,"Neustadt – Speyer",208,"Rheinland-Pfalz",10,-20.2
+2021,2021-09-26,"Kaiserslautern",209,"Rheinland-Pfalz",12,-21.9
+2021,2021-09-26,"Pirmasens",210,"Rheinland-Pfalz",12.7,-17.7
+2021,2021-09-26,"Südpfalz",211,"Rheinland-Pfalz",9.8,-18.4
+2021,2021-09-26,"Altötting",212,"Bayern",11.1,-0.300000000000001
+2021,2021-09-26,"Erding – Ebersberg",213,"Bayern",6.8,-8.1
+2021,2021-09-26,"Freising",214,"Bayern",9.4,-4.1
+2021,2021-09-26,"Fürstenfeldbruck",215,"Bayern",6.8,-12.5
+2021,2021-09-26,"Ingolstadt",216,"Bayern",9.6,-4.3
+2021,2021-09-26,"München-Nord",217,"Bayern",4.3,-19.9
+2021,2021-09-26,"München-Ost",218,"Bayern",4.2,-17.7
+2021,2021-09-26,"München-Süd",219,"Bayern",4.4,-23.1
+2021,2021-09-26,"München-West/Mitte",220,"Bayern",3.8,-23.1
+2021,2021-09-26,"München-Land",221,"Bayern",5,-15.4
+2021,2021-09-26,"Rosenheim",222,"Bayern",8.3,-5.5
+2021,2021-09-26,"Starnberg – Landsberg am Lech",224,"Bayern",6,-13.9
+2021,2021-09-26,"Traunstein",225,"Bayern",7.8,-9.2
+2021,2021-09-26,"Weilheim",226,"Bayern",7.1,-7.3
+2021,2021-09-26,"Deggendorf",227,"Bayern",13.8,-1.6
+2021,2021-09-26,"Landshut",228,"Bayern",9.9,-1.8
+2021,2021-09-26,"Passau",229,"Bayern",12,-8.9
+2021,2021-09-26,"Rottal-Inn",230,"Bayern",12.7,0.799999999999999
+2021,2021-09-26,"Straubing",231,"Bayern",12.7,0.299999999999999
+2021,2021-09-26,"Amberg",232,"Bayern",10.4,-5.6
+2021,2021-09-26,"Regensburg",233,"Bayern",8.4,-8.2
+2021,2021-09-26,"Schwandorf",234,"Bayern",13.3,-9.5
+2021,2021-09-26,"Weiden",235,"Bayern",10.3,-12.2
+2021,2021-09-26,"Bamberg",236,"Bayern",9,-10
+2021,2021-09-26,"Bayreuth",237,"Bayern",8.4,-11
+2021,2021-09-26,"Coburg",238,"Bayern",9.7,-16.4
+2021,2021-09-26,"Hof",239,"Bayern",11.8,-12.1
+2021,2021-09-26,"Kulmbach",240,"Bayern",10.6,-5.6
+2021,2021-09-26,"Ansbach",241,"Bayern",9.6,-8.1
+2021,2021-09-26,"Erlangen",242,"Bayern",6.9,-13.8
+2021,2021-09-26,"Fürth",243,"Bayern",8.6,-15.4
+2021,2021-09-26,"Nürnberg-Nord",244,"Bayern",5.9,-16.7
+2021,2021-09-26,"Nürnberg-Süd",245,"Bayern",10.2,-14
+2021,2021-09-26,"Roth",246,"Bayern",7.9,-9
+2021,2021-09-26,"Aschaffenburg",247,"Bayern",9.6,-7.5
+2021,2021-09-26,"Bad Kissingen",248,"Bayern",9.9,-9.1
+2021,2021-09-26,"Main-Spessart",249,"Bayern",8,-13.5
+2021,2021-09-26,"Schweinfurt",250,"Bayern",9.9,-8.7
+2021,2021-09-26,"Augsburg-Stadt",252,"Bayern",8.8,-11.8
+2021,2021-09-26,"Augsburg-Land",253,"Bayern",9.7,-4.8
+2021,2021-09-26,"Donau-Ries",254,"Bayern",10.1,-9.1
+2021,2021-09-26,"Neu-Ulm",255,"Bayern",12,-4
+2021,2021-09-26,"Oberallgäu",256,"Bayern",8,-7.8
+2021,2021-09-26,"Ostallgäu",257,"Bayern",10.2,-2.1
+2021,2021-09-26,"Stuttgart I",258,"Baden-Württemberg",4,-35.9
+2021,2021-09-26,"Stuttgart II",259,"Baden-Württemberg",7.2,-18.7
+2021,2021-09-26,"Böblingen",260,"Baden-Württemberg",8.3,-21.4
+2021,2021-09-26,"Esslingen",261,"Baden-Württemberg",7,-25
+2021,2021-09-26,"Nürtingen",262,"Baden-Württemberg",8.3,-21.8
+2021,2021-09-26,"Göppingen",263,"Baden-Württemberg",11.8,-19.2
+2021,2021-09-26,"Waiblingen",264,"Baden-Württemberg",8.7,-20.3
+2021,2021-09-26,"Ludwigsburg",265,"Baden-Württemberg",8.4,-21.1
+2021,2021-09-26,"Neckar-Zaber",266,"Baden-Württemberg",10,-20.4
+2021,2021-09-26,"Heilbronn",267,"Baden-Württemberg",12.8,-15
+2021,2021-09-26,"Schwäbisch Hall – Hohenlohe",268,"Baden-Württemberg",12,-20.1
+2021,2021-09-26,"Backnang – Schwäbisch Gmünd",269,"Baden-Württemberg",11.7,-18.8
+2021,2021-09-26,"Aalen – Heidenheim",270,"Baden-Württemberg",10.2,-26.8
+2021,2021-09-26,"Karlsruhe-Stadt",271,"Baden-Württemberg",6.8,-23.2
+2021,2021-09-26,"Karlsruhe-Land",272,"Baden-Württemberg",9,-21.4
+2021,2021-09-26,"Rastatt",273,"Baden-Württemberg",10.7,-22.5
+2021,2021-09-26,"Heidelberg",274,"Baden-Württemberg",6.1,-24.1
+2021,2021-09-26,"Mannheim",275,"Baden-Württemberg",9.8,-16.6
+2021,2021-09-26,"Odenwald – Tauber",276,"Baden-Württemberg",12.1,-23.7
+2021,2021-09-26,"Rhein-Neckar",277,"Baden-Württemberg",10,-18.5
+2021,2021-09-26,"Bruchsal – Schwetzingen",278,"Baden-Württemberg",11.6,-18
+2021,2021-09-26,"Pforzheim",279,"Baden-Württemberg",14.1,-14.4
+2021,2021-09-26,"Calw",280,"Baden-Württemberg",12.3,-21.5
+2021,2021-09-26,"Freiburg",281,"Baden-Württemberg",4.5,-24.3
+2021,2021-09-26,"Lörrach – Müllheim",282,"Baden-Württemberg",8.1,-17.1
+2021,2021-09-26,"Emmendingen – Lahr",283,"Baden-Württemberg",8.6,-19.2
+2021,2021-09-26,"Offenburg",284,"Baden-Württemberg",8.9,-26
+2021,2021-09-26,"Rottweil – Tuttlingen",285,"Baden-Württemberg",13.7,-17.8
+2021,2021-09-26,"Schwarzwald-Baar",286,"Baden-Württemberg",10.5,-25.9
+2021,2021-09-26,"Konstanz",287,"Baden-Württemberg",8.6,-25.5
+2021,2021-09-26,"Waldshut",288,"Baden-Württemberg",8.5,-25.1
+2021,2021-09-26,"Reutlingen",289,"Baden-Württemberg",10.1,-22.4
+2021,2021-09-26,"Tübingen",290,"Baden-Württemberg",7.8,-19.2
+2021,2021-09-26,"Ulm",291,"Baden-Württemberg",9.1,-23.6
+2021,2021-09-26,"Biberach",292,"Baden-Württemberg",10.2,-24.9
+2021,2021-09-26,"Bodensee",293,"Baden-Württemberg",9.2,-21.2
+2021,2021-09-26,"Ravensburg",294,"Baden-Württemberg",8,-22.6
+2021,2021-09-26,"Zollernalb – Sigmaringen",295,"Baden-Württemberg",11.4,-18.7
+2021,2021-09-26,"Saarbrücken",296,"Saarland",9,-27.9
+2021,2021-09-26,"Saarlouis",297,"Saarland",9.7,-27
+2021,2021-09-26,"St. Wendel",298,"Saarland",9,-26.1
+2021,2021-09-26,"Homburg",299,"Saarland",11.6,-25
