@@ -1,5 +1,8 @@
 <h1>Quanti_II Research Paper</h1>
-<p>As requested, the code and data that support the findings of our Quantitative Methods II research paper are available in this folder.</p>
+<p>As requested, the code and data behind our Quantitative Methods II research paper are available here.</p>
+<p>The replication R code is available <a href="https://github.com/Android022/QuantiII/blob/main/replication_code.qmd">here</a>. Due to time constraints, the code is admittedly not as clean as we would like it to be. However, we hope it gives an indication of the steps we did in our analysis, and are happy to clarify anything that is unclear. We each coded and ran the analyses independently, getting the same results, which increased our confidence that we did not make coding mistakes. </p>
+<p>The data files using in this code are <a href="https://github.com/Android022/QuantiII/blob/main/data_state.csv">here for state elections</a> and <a href="https://github.com/Android022/QuantiII/blob/main/data_federal.csv">here for federal elections</a>. </p>
+<p>Below, we have also provided the component datasets (i.e. the two election constituency result datasets and the two hate crime datasets). After term, we plan to add replication code for scraping, compiling and cleaning these datasets too.</p>
 
 <h2>Datasets</h2>
 
