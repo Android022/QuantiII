@@ -1,0 +1,675 @@
+---
+title: "Analysis"
+format: html
+editor: visual
+---
+
+## Importing
+
+```{r}
+# load libraries
+library(ggplot2)
+library(dplyr)
+library(tidyverse)
+
+# import dataset
+setwd("G:/My Drive/1. Quantitative Methods/Rudd, Reid & Rojo Salazar 2024/Analysis/")
+data <- read.csv("full_data_both_hate.csv")
+
+# recode hate crimes to per capita (per 100,000)
+data$hate_crime_per100000 <- (data$hate_crime_count / data$population) * 100
+data$hate_crime_per100000_ngo <- (data$ngo_hate_count / data$population) * 100
+```
+
+## Hate crime yearly trend
+
+```{r}
+# Define the list of start and end dates
+date_ranges <- list(
+  c("2012-09-23", "2013-09-22"),
+  c("2013-09-23", "2014-09-22"),
+  c("2014-09-23", "2015-09-22"),
+  c("2015-09-23", "2016-09-22"),
+  c("2016-09-23", "2017-09-24"),
+  c("2017-09-25", "2018-09-24"),
+  c("2018-09-25", "2019-09-24"),
+  c("2019-09-25", "2020-09-24"),
+  c("2020-09-25", "2021-09-26"),
+  c("2021-09-27", "2022-09-26"),
+  c("2022-09-27", "2023-09-26")
+)
+
+yearly_hate_crimes <- data.frame(
+  Start_Date = as.Date(character(length(date_ranges))),
+  End_Date = as.Date(character(length(date_ranges))),
+  Hate_Crime_Count = numeric(length(date_ranges)),
+  ngo_Hate_Crime_Count = numeric(length(date_ranges)),  # Add column for ngo_hate_count
+  Year = integer(length(date_ranges))
+)
+
+# Loop through each date range and calculate the sum of hate crime counts
+for (i in seq_along(date_ranges)) {
+  start_date <- as.Date(date_ranges[[i]][1])
+  end_date <- as.Date(date_ranges[[i]][2])
+  yearly_hate_crimes[i, "Start_Date"] <- start_date
+  yearly_hate_crimes[i, "End_Date"] <- end_date
+  yearly_hate_crimes[i, "Hate_Crime_Count"] <- sum(subset(data, start >= start_date & end <= end_date)$hate_crime_count)
+  yearly_hate_crimes[i, "ngo_Hate_Crime_Count"] <- sum(subset(data, start >= start_date & end <= end_date)$ngo_hate_count)  # Calculate ngo_hate_count
+  yearly_hate_crimes[i, "Year"] <- as.integer(format(start_date, "%Y"))
+}
+
+# Print the table
+print(yearly_hate_crimes)
+
+# Filter out the first two years
+filtered_data <- yearly_hate_crimes[yearly_hate_crimes$Year > 2013,]
+
+# Plot both Hate_Crime_Count and ngo_Hate_Crime_Count on a line chart
+hate_count <- ggplot(filtered_data, aes(x = Year)) +
+  geom_line(aes(y = Hate_Crime_Count, color = "government"), linetype = "solid", linewidth = 2) +
+  geom_line(aes(y = ngo_Hate_Crime_Count, color = "ngo"), linetype = "solid", linewidth = 2) +
+  labs(title = "Hate Crimes by year",
+       color = "Data source") +  # Setting up the legend title as 'Category'
+  scale_x_continuous(breaks = filtered_data$Year, labels = filtered_data$Year) +
+  scale_y_continuous(limits = c(0, max(filtered_data$Hate_Crime_Count, filtered_data$ngo_Hate_Crime_Count)), expand = c(0, 0)) +  # Set y-axis limits to start from 0
+  scale_color_manual(values = c("government" = "skyblue", "ngo" = "orange"),  # Setting colors for each line
+                     labels = c("government" = "Government", "ngo" = "NGO")) +  # Setting custom legend labels
+  theme_minimal() +
+  theme(axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        panel.grid.major = element_blank(),  # Remove major gridlines
+        panel.grid.minor = element_blank())  # Remove minor gridlines
+
+ggsave("output/hate_count.png", plot = hate_count, width = 6, height = 4, dpi = 300)
+
+rm(date_ranges, filtered_data, end_date, i, start_date)
+
+
+```
+
+Correlation between two hate crime datasets:
+
+```{r}
+filtered_data <- subset(data, hate_crime_count <= 100 & ngo_hate_count <= 100)
+
+# Create a scatter plot with a line of best fit
+corr <- ggplot(filtered_data, aes(x = hate_crime_count, y = ngo_hate_count)) +
+  geom_point() +  # Scatter plot points
+  geom_smooth(method = "lm", se = FALSE) +  # Add a line of best fit
+  labs(x = "Government Dataset", y = "NGO Dataset", title = "Correlation of hate crime datasets") +
+  theme_bw() +
+  theme(panel.border = element_blank())  
+
+ggsave("output/hate_corr.png", plot = corr, width = 6, height = 4, dpi = 300)
+
+
+rm(filtered_data, corr)
+
+```
+
+## Map
+
+```{r}
+# install package for reading shapefiles
+# install.packages("sf")
+library(sf)
+
+# read shapefiles
+shapefile13 <- st_read("G:/My Drive/1. Quantitative Methods/Rudd, Reid & Rojo Salazar 2024/Analysis/Shape files/2013_Germany/", "Geometrie_Wahlkreise_18DBT_VG1000")
+
+shapefile17 <- st_read("G:/My Drive/1. Quantitative Methods/Rudd, Reid & Rojo Salazar 2024/Analysis/Shape files/2017_Germany/", "Geometrie_Wahlkreise_19DBT_VG250")
+
+shapefile21 <- st_read("G:/My Drive/1. Quantitative Methods/Rudd, Reid & Rojo Salazar 2024/Analysis/Shape files/2021_Germany/", "Geometrie_Wahlkreise_20DBT_VG250")
+
+shapefile13 <- shapefile13 %>%
+  rename(constituency_no = WKR_NR)
+
+shapefile17 <- shapefile17 %>%
+  rename(constituency_no = WKR_NR)
+
+shapefile21 <- shapefile21 %>%
+  rename(constituency_no = WKR_NR)
+
+# add geometry to dataset
+# first split data into years
+data13 <- data[data$year %in% c(2013, 2014, 2015, 2016), ]
+data17 <- data[data$year %in% c(2017, 2018, 2019, 2020), ]
+data21 <- data[data$year %in% c(2021, 2022, 2023), ]
+
+# merge using the relevant shapefiles
+merged13 <- merge(data13, shapefile13[, c("constituency_no", "geometry")], by = "constituency_no", all.x = TRUE)
+merged17 <- merge(data17, shapefile17[, c("constituency_no", "geometry")], by = "constituency_no", all.x = TRUE)
+merged21 <- merge(data21, shapefile21[, c("constituency_no", "geometry")], by = "constituency_no", all.x = TRUE)
+
+# rejoin the three
+data <- rbind(merged13, merged17, merged21)
+
+# remove duplicated geometry
+#data <- data[, -c(29:33)]
+
+# Rename 'geometry.x' to 'geometry'
+#names(data)[names(data) == 'geometry.x'] <- 'geometry'
+
+colnames(data)
+
+rm(shapefile13, shapefile17, shapefile21, data13, data17, data21, merged13, merged17, merged21)
+
+# Calculate the sum of hate crimes for each constituency_no
+map <- data %>%
+  group_by(constituency_no) %>%
+  summarise(total_hate_crime = sum(hate_crime_per100000))
+
+first_obs_data <- data %>%
+  group_by(constituency_no) %>%
+  slice(1)  # Select the first observation for each group
+
+# Merge the datasets
+map <- merge(map, first_obs_data[c("constituency_no", "geometry")], by = "constituency_no", all.x = TRUE)
+
+rm(first_obs_data)
+
+# filter out constituency_no 75 (outlier)
+map <- map %>%
+  filter(constituency_no != 75)
+
+east_germany_shapefile <- st_read("path/to/your/shapefile.shp")
+
+shapefile_east <- st_read("G:/My Drive/1. Quantitative Methods/Rudd, Reid & Rojo Salazar 2024/Analysis/Shape files/East Germany")
+
+# Plotting
+ggplot(data = map, aes(fill = total_hate_crime)) +
+  geom_sf(aes(geometry = geometry)) +
+  scale_fill_gradient(low = "lightblue", high = "red", na.value = "gray50") +
+  labs(fill = "Total Hate Crime", title = "Hate crimes in Germany", subtitle = "2015-2023, per 100,000 population, govt figures") +
+  theme_minimal() +
+  coord_sf(xlim = c(-4e+05, 4e+05), ylim = c(5900000, 6850000)) +
+  theme(axis.title = element_blank(),  # Remove axis labels
+        axis.text = element_blank(),  # Remove axis text
+        axis.ticks = element_blank(),  # Remove axis ticks
+        panel.grid.major = element_blank(),  # Remove major gridlines
+        panel.grid.minor = element_blank(),  # Remove minor gridlines
+        legend.title = element_blank())  # Remove legend title
+
+```
+
+## Comparing hate crime datasets
+
+```{r}
+# Correlation between event counts across space
+data_not_na <- data[!is.na(data$hate_crime_per100000) & !is.na(data$hate_crime_per100000_ngo), ]
+
+cor(data_not_na$hate_crime, data_not_na$hate_crime)
+cor(data_not_na$hate_crime_count, data_not_na$ngo_hate_count)
+ # 0.93 correlation!
+
+library(dplyr)
+
+# Aggregate the data
+comparing_data <- data %>%
+  group_by(state, year) %>%
+  summarise(
+    total_hate_crime_count = sum(hate_crime_count, na.rm = TRUE),
+    total_ngo_hate_count = sum(ngo_hate_count, na.rm = TRUE)
+  ) %>%
+  ungroup() %>%
+  filter(year %in% c(2015, 2016, 2017, 2018, 2019, 2020))
+
+hate_check <- lm(total_ngo_hate_count ~ total_hate_crime_count + state + year, data = comparing_data)
+
+stargazer::stargazer(
+  hate_check,
+  title = "Regression Results",
+  type = "text", 
+  star.cutoffs = c(0.05, 0.01, 0.001),
+  dep.var.caption = c("ngo_hate_count"),
+  dep.var.label = c("govt_data"),
+  covariate.labels = c(
+  "state",
+  "year"))
+```
+
+## Regression Analysis
+
+```{r}
+regression <- lm(hate_crime_per100000 ~ 
+                   population + pop_foreign + unemployment +
+                   gdp_per_cap + east, data = data)
+
+regression_ngo <- lm(hate_crime_per100000_ngo ~ 
+                   population + pop_foreign + unemployment +
+                   gdp_per_cap + east, data = data)
+
+regression_list <- list(regression, regression_ngo)
+
+# Generate stargazer output for both regression models side by side
+stargazer::stargazer(
+  regression_list,
+  title = "Regression Results",
+  type = "html", 
+  star.cutoffs = c(0.05, 0.01, 0.001),
+  dep.var.caption = c("Hate crimes"),
+  dep.var.labels = c("Govt data", "NGO data"),
+  covariate.labels = c(
+  "Population size",
+  "Percentage immigrants",
+  "Unemployment",
+  "GDP per capita",
+  "East"))
+
+rm(regression_list)
+
+```
+
+## Regression Discontinuity Analysis
+
+```{r}
+# install.packages("rdd")
+library(rdd)
+
+# McCrary Sorting Test
+DCdensity(data$afd_margin, htest = TRUE)
+
+# Add title
+title("McCrary Density Plot")
+```
+
+To plot a nicer-looking graph:
+
+```{r}
+# Calculate density estimate for afd_margin
+density_estimate <- density(data$afd_margin)
+
+# Plot the density estimate
+plot(density_estimate,
+     main = "Density Plot of AfD Margin",
+     xlab = "AfD Margin",
+     ylab = "Density",
+     type = "l",     # Use lines plot type
+     col = "blue",
+     lwd = 2,
+     xlim = c(-60,20))  # Set line color to blue
+
+abline(v = 0, lty = "dashed")
+```
+
+Estimating RD
+
+```{r}
+# Model 1
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data))
+
+rd <- RDestimate(hate_crime_per100000 ~ afd_margin, data = data)
+
+subset_data <- subset(data, afd_margin >= -5 & afd_margin <= 5)
+
+# plot this graph
+subset_data |> 
+  ggplot(aes(x = afd_margin, y = hate_crime_per100000)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(
+    data = filter(data, afd_margin < 0),
+    method = "lm",
+    color = "blue",
+    formula = y ~ poly(x, 2) # Polynomial regression for smoother line
+  ) +
+  geom_smooth(
+    data = filter(data, afd_margin >= 0),
+    method = "lm",
+    color = "red",
+    formula = y ~ poly(x, 2) # Polynomial regression for smoother line
+  ) +
+  theme_minimal() +
+  labs(x = "AfD Margin", y = "Hate crimes per 100,000 population") +
+  xlim(-5, 5) +
+  ylim(0, 10)
+
+
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data))
+
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data))
+
+
+
+# Just the East
+east_data <- subset(data, east == 1)
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = east_data))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = east_data))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = east_data))
+
+
+# Not per capita hate crimes
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data))
+
+```
+
+Only election year:
+
+```{r}
+data_electionyear <- subset(data, start == "2013-09-23" | start == "2017-09-25" | start == "2021-09-27")
+
+data_electionyear_east <- subset(data_electionyear, east == 1)
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_electionyear))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_electionyear))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_electionyear))
+
+
+# Just the East
+east_data <- subset(data, east == 1)
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_electionyear_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_electionyear_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_electionyear_east))
+
+
+# Not per capita hate crimes
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_electionyear))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_electionyear))
+
+```
+
+Only specific elections:
+
+```{r}
+
+data_election13 <- subset(data, start == "2013-09-23" | start == "2014-09-23" | start == "2015-09-23" | start == "2016-09-23")
+
+data_election17 <- subset(data, start == "2017-09-25" | start == "2018-09-25" | start == "2019-09-25" | start == "2020-09-25")
+
+data_election21 <- subset(data, start == "2021-09-27" | start == "2022-09-27")
+
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election21))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election21))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election21))
+
+
+# Just the East
+data_election13_east <- subset(data, start == "2013-09-23" | start == "2014-09-23" | start == "2015-09-23" | start == "2016-09-23" | east == 1)
+
+data_election17_east <- subset(data, start == "2017-09-25" | start == "2018-09-25" | start == "2019-09-25" | start == "2020-09-25" | east == 1)
+
+data_election21_east <- subset(data, start == "2021-09-27" | start == "2022-09-27" | east == 1)
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election21_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election21_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election21_east))
+
+
+# Not per capita hate crimes
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election13))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election17))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election21))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election21))
+```
+
+Specific elections, election years:
+
+```{r}
+data_election13 <- subset(data, start == "2013-09-23")
+data_election17 <- subset(data, start == "2017-09-25")
+data_election21 <- subset(data, start == "2021-09-27")
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election21))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election21))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election21))
+
+
+# Just the East
+data_election13_east <- subset(data, start == "2013-09-23" | east == 1)
+data_election17_east <- subset(data, start == "2017-09-25" | east == 1)
+data_election21_east <- subset(data, start == "2021-09-27" | east == 1)
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election13_east))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election17_east))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data_election21_east))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data_election21_east))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data_election21_east))
+
+
+# Not per capita hate crimes
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election13))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election13))
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election17))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election17))
+summary(RDestimate(hate_crime_count ~ afd_margin, data = data_election21))
+summary(RDestimate(ngo_hate_count ~ afd_margin, data = data_election21))
+
+rm(data_election13, data_election13_east, data_election17, data_election17_east, data_election21, data_election21_east, data_over, data_under, covariate, covariates, i, calculate_summary, summary_stats_over, summary_stats_under, data_electionyear, data_electionyear_east)
+```
+
+Only elections where the afd had not done well previously
+
+```{r}
+data <- read.csv("full_data_both_hate_support.csv")
+
+data <- subset(data, afd_landtag_10 == 0)
+new15_data <- subset(data, afd_landtag_15 == 0)
+
+
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = new10_data))
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = new15_data))
+
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = new10_data))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = new15_data))
+
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = new10_data))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = new15_data))
+
+
+```
+
+## Robustness checks
+
+Placebo checks:
+
+```{r}
+
+# -5 
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data, cutpoint = -5))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data, cutpoint = -5))
+
+# -10 
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data, cutpoint = -10))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data, cutpoint = -10))
+
+# 5 
+summary(RDestimate(hate_crime_per100000 ~ afd_margin, data = data, cutpoint = 5))
+summary(RDestimate(hate_crime_per100000_ngo ~ afd_margin, data = data, cutpoint = 5))
+
+
+```
+
+Covariate imbalance check
+
+```{r}
+# Subset data for observations where afd_margin is between -5 and 0
+data_under <- subset(data, afd_margin >= -5 & afd_margin < 0)
+
+# Subset data for observations where afd_margin is between 0 and 5
+data_over <- subset(data, afd_margin >= 0 & afd_margin < 5)
+
+# Specify covariates for testing
+covariates <- c("afd", "area", "population", "pop_foreign", "age_1824", "age_75", 
+                "school_leaver_without_certificate", "unemployment", "disposable_income", 
+                "gdp_per_cap", "east", "election")
+
+# Function to calculate summary statistics, handling missing values
+calculate_summary <- function(dataset, covariate) {
+  if (is.numeric(dataset[[covariate]])) {
+    mean_val <- mean(dataset[[covariate]], na.rm = TRUE)
+    sd_val <- sd(dataset[[covariate]], na.rm = TRUE)
+    return(c(mean_val, sd_val))
+  } else {
+    return(c(NA, NA))
+  }
+}
+
+# Calculate summary statistics for each covariate in each group
+summary_stats_under <- sapply(covariates, function(covariate) calculate_summary(data_under, covariate))
+summary_stats_over <- sapply(covariates, function(covariate) calculate_summary(data_over, covariate))
+
+# Display summary statistics
+print("Summary statistics for -5 to 0:")
+print(summary_stats_under)
+print("\nSummary statistics for 0 to 5:")
+print(summary_stats_over)
+
+# Perform statistical tests to compare covariate distributions
+# You can use appropriate tests based on the type of covariate (e.g., t-test for continuous, chi-square for categorical)
+# For illustration, let's use t-tests for continuous variables
+for (covariate in covariates) {
+  if (is.numeric(data_under[[covariate]]) && is.numeric(data_over[[covariate]])) {
+    t_test_result <- t.test(data_under[[covariate]], data_over[[covariate]])
+    print(paste("T-test for", covariate))
+    print(t_test_result)
+  } else {
+    print(paste("Skipping", covariate, "due to non-numeric values"))
+  }
+}
+
+
+```
+
+```{r}
+# Create an empty dataframe to store the results
+results_table <- data.frame(
+  Covariate = character(length(covariates)),
+  Mean_x = numeric(length(covariates)),
+  Mean_y = numeric(length(covariates)),
+  t_value = numeric(length(covariates)),
+  df = numeric(length(covariates)),
+  p_value = numeric(length(covariates)),
+  CI_lower = numeric(length(covariates)),
+  CI_upper = numeric(length(covariates))
+)
+
+# Perform statistical tests and fill in the results table
+for (i in seq_along(covariates)) {
+  covariate <- covariates[i]
+  if (is.numeric(data_under[[covariate]]) && is.numeric(data_over[[covariate]])) {
+    t_test_result <- t.test(data_under[[covariate]], data_over[[covariate]])
+    results_table[i, "Covariate"] <- covariate
+    results_table[i, "Mean_x"] <- mean(data_under[[covariate]], na.rm = TRUE)
+    results_table[i, "Mean_y"] <- mean(data_over[[covariate]], na.rm = TRUE)
+    results_table[i, "t_value"] <- t_test_result$statistic
+    results_table[i, "df"] <- t_test_result$parameter
+    results_table[i, "p_value"] <- t_test_result$p.value
+    results_table[i, "CI_lower"] <- t_test_result$conf.int[1]
+    results_table[i, "CI_upper"] <- t_test_result$conf.int[2]
+  } else {
+    results_table[i, ] <- NA
+  }
+}
+
+# Print the results table
+print(results_table)
+
+```
+
+## State elections
+
+```{r}
+library(rdd)
+library(ggplot2)
+
+data <- read.csv("state_hate.csv")
+
+unique(data$state)
+
+colnames(data)[colnames(data) == "total_hate_crime_count"] <- "hate"
+
+summary(RDestimate(hate ~ afd_margin, data = data))
+
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data))
+
+# plot this graph
+rd_estimate <- data |> 
+  ggplot(aes(x = afd_margin, y = hate)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(
+    data = filter(data, afd_margin < 0),
+    method = "lm",
+    color = "blue",
+    formula = y ~ poly(x, 2) # Polynomial regression for smoother line
+  ) +
+  geom_smooth(
+    data = filter(data, afd_margin >= 0),
+    method = "lm",
+    color = "red",
+    formula = y ~ poly(x, 2) # Polynomial regression for smoother line
+  ) +
+  theme_minimal() +
+  labs(x = "AfD Margin", y = "Hate crimes") +
+  xlim(-10, 10) +
+  ylim(0, 10)
+
+rd_estimate
+
+
+
+# Just the East
+# add east dummy variable
+data$east <- 0
+
+unique(data$state)
+
+# Set 'east' to 1 for the states 
+data$east[data$state %in% c('Mecklenburg-Vorpommern', 'Brandenburg', 'Saxony', 'Saxony-Anhalt', 'Thuringia')] <- 1
+
+east_data <- subset(data, east == 1)
+
+summary(RDestimate(hate ~ afd_margin, data = east_data))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = east_data))
+
+
+
+# Only election year
+election_data <- subset(data, election_year == 1)
+
+summary(RDestimate(hate ~ afd_margin, data = election_data))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = election_data))
+
+
+# Placebo tests
+summary(RDestimate(hate ~ afd_margin, data = data, cutpoint = -2))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data, cutpoint = -2))
+
+summary(RDestimate(hate ~ afd_margin, data = data, cutpoint = -5))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data, cutpoint = -5))
+
+summary(RDestimate(hate ~ afd_margin, data = data, cutpoint = -10))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data, cutpoint = -10))
+
+summary(RDestimate(hate ~ afd_margin, data = data, cutpoint = 2))
+summary(RDestimate(hate_crime_occurred ~ afd_margin, data = data, cutpoint = 2))
+
+
+
+```
